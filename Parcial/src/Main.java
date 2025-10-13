@@ -179,13 +179,38 @@ public class Main {
                     }
                     break;
                 case 3:
-                    int n1;
+                    int n1,n2,i;
                     System.out.println("ingrese su numero a evaluar");
+                    n1=leer.nextInt();
+                    i=1;
+                    n2=0;
+                    do {
+                    if(n1%i==0){
+                       n2=n2+i;
+                    }
+                    else{}
+                    i++;
+                    }while(n1-1>i);
+                    if(n2==n1){
+                        System.out.println("su numero es un numero perfecto");
+                    }
+                    else{
+                        System.out.println("su numero no es un numero perfecto");
+                    }
 
                     break;
                 case 4:
+                    String palabra;
+                    System.out.println("Ingrese la palabra a convertir");
+                    palabra = leer.nextLine();
+                    Palabra1(String palabra);
+
                     break;
                 case 5:
+                    String a2;
+                    System.out.println("ingrese su palabra a evaluar");
+                    a2=leer.nextLine();
+
                     break;
                 case 6:
                     break;
@@ -196,10 +221,10 @@ public class Main {
                 case 9:
                     break;
                 case 10:
-                    System.out.println("Gracias por usar el programa");
+                    System.out.println("Gracias por usar el programa :D");
                     break;
                 default:
-                    System.out.println("numero o caracter no valido");
+                    System.out.println("numero no valido");
             }
         }while(opcion!=10);
     }
