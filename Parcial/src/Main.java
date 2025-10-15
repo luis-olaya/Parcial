@@ -79,6 +79,7 @@ public class Main {
                 case 8:
                     break;
                 case 9:
+
                     break;
                 case 10:
                     System.out.println("Gracias por usar el programa :D");
