@@ -55,7 +55,7 @@ public class Main {
                         System.out.println("No es palíndromo");
                     }
                     //https://www.youtube.com/watch?v=dMvxJFCaNGo&list=WL&index=1&t=184s
-                    //VIDEO CON EL QUE ME GUIE
+                    //VIDEO CON EL QUE ME GUIÉ
                     break;
                 case 5:
                     String capicua1 ="";
@@ -69,6 +69,10 @@ public class Main {
                     }
                     break;
                 case 6:
+                    String morse ="";
+                    System.out.println("Ingrese su numero a evaluar a evaluar:");
+                    morse = leer.next();
+                    Morce.morce(morse);
                     break;
                 case 7:
                     break;
