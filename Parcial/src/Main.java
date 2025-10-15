@@ -9,169 +9,14 @@ public class Main {
             opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
-                    int anio, mes, dia;
-                    do {
-                        System.out.println(" ingrese año de nacimiento");
-                        anio = leer.nextInt();
-                    } while (anio < 0);
-
-                    do {
-                        System.out.println(" ingrese mes de nacimiento");
-                        mes = leer.nextInt();
-                    } while (mes < 0 || mes > 12);
-                    System.out.println(" ingrese dia de nacimiento");
-                    dia = leer.nextInt();
-                    if (mes == 1) {
-                        if (dia > 0 && dia < 32) {
-                            if ((dia > 0) && (dia > 20)) {
-                                System.out.println("signo:capricornio, caballero shura");
-                            } else {
-                                System.out.println("signo:Acuario, caballero camus");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-
-                    }
-                    if (mes == 2) {
-                        if ((dia > 0) && (dia < 30)) {
-                            if ((dia > 0) && (dia < 19)) {
-                                System.out.println("signo:Acuario, caballero camus");
-                            } else {
-                                System.out.println("signo:piscis, caballero aphrodite");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-
-                    }
-                    if (mes == 3) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 22)) {
-                                System.out.println("signo:piscis, caballero aphrodite");
-                            } else {
-                                System.out.println("signo:aries caballero moo");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-
-                    }
-                    if (mes == 4) {
-                        if ((dia > 0) && (dia < 31)) {
-                            if ((dia > 0) && (dia < 20)) {
-                                System.out.println("signo:aries caballero moo");
-                            } else {
-                                System.out.println("signo:tauro caballero aldebaran");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    }
-
-                    if (mes == 5) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 21)) {
-                                System.out.println("signo:tauro caballero aldebaran");
-                            } else {
-                                System.out.println("signo:geminis caballero ares");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-
-                    }
-
-                    if (mes == 6) {
-                        if ((dia > 0) && (dia < 31)) {
-                            if ((dia > 0) && (dia < 21)) {
-                                System.out.println("signo:geminis caballero ares");
-                            } else {
-                                System.out.println("signo:cancer caballero deathmask");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-
-                    }
-
-                    if (mes == 7) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 23)) {
-                                System.out.println("signo:cancer caballero deathmask");
-                            } else {
-                                System.out.println("signo:Leo, caballero aiolia");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    }
-
-                    if (mes == 8) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 23)) {
-                                System.out.println("signo:Leo, caballero aiolia");
-                            } else {
-                                System.out.println("signo:virgo, caballero shaka");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    }
-
-                    if (mes == 9) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 31)) {
-                                System.out.println("signo:virgo, caballero shaka");
-                            } else {
-                                System.out.println("signo:libra caballero dohko");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    }
-                    if (mes == 10) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 23)) {
-                                System.out.println("signo:libra caballero dohko");
-                            } else {
-                                System.out.println("signo:escorpio caballero milo");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    }
-
-                    if (mes == 11) {
-                        if ((dia > 0) && (dia < 31)) {
-                            if ((dia > 0) && (dia < 22)) {
-                                System.out.println("signo:escorpio caballero milo");
-                            } else {
-                                System.out.println("signo:sagitario caballero aiolos");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    } else {
-                    }
-                    if (mes == 12) {
-                        if ((dia > 0) && (dia < 32)) {
-                            if ((dia > 0) && (dia < 22)) {
-                                System.out.println("signo:sagitario caballero aiolos");
-                            } else {
-                                System.out.println("signo:capricornio caballero shura");
-                            }
-                        } else {
-                            System.out.println("dia no es valido");
-                        }
-                    }
+                    Zodiaco.zodiaco();
                     break;
                 case 2:
                     System.out.println("ingrese su año de nacimiento");
                     int anio1;
                     anio1 = leer.nextInt();
-                    anio = 2025 - anio1;
-                    if(anio >17){
+                    anio1 = 2025 - anio1;
+                    if(anio1 >17){
                         System.out.println("usted es mayor de edad");
                     }
                     else{
@@ -200,17 +45,28 @@ public class Main {
 
                     break;
                 case 4:
-                    String palabra;
-                    System.out.println("Ingrese la palabra a convertir");
-                    palabra = leer.nextLine();
-                    Palabra1(String palabra);
+                    String palabra ="";
+                    System.out.println("Ingrese su palabra a evaluar:");
+                    palabra = leer.next();
 
+                    if (ValidadorPalindromo4.validarPalindromo(palabra)) {
+                        System.out.println("Es palíndromo");
+                    } else {
+                        System.out.println("No es palíndromo");
+                    }
+                    //https://www.youtube.com/watch?v=dMvxJFCaNGo&list=WL&index=1&t=184s
+                    //VIDEO CON EL QUE ME GUIE
                     break;
                 case 5:
-                    String a2;
-                    System.out.println("ingrese su palabra a evaluar");
-                    a2=leer.nextLine();
-
+                    String capicua1 ="";
+                    System.out.println("Ingrese su numero a evaluar a evaluar:");
+                    capicua1 = leer.next();
+                    if (Capicua.validarCapicua(capicua1)){
+                        System.out.println("Es capicua");
+                    }
+                    else{
+                        System.out.println("No es capicua");
+                    }
                     break;
                 case 6:
                     break;
